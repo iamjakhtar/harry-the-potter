@@ -8,7 +8,7 @@ const initialCartState: Cart = {
     cartItems: [],
     addItemToCart: () => {},
     removeCartItem: () => {},
-    toggleCart: () => {}
+    toggleCart: () => {},
 }
 
 export const CartContext = createContext<Cart>(initialCartState);
@@ -33,12 +33,15 @@ const CartContextProvider:FC<{children: ReactNode}> = ({ children }) => {
             const newCartItems = [...cartItems, {...item, quantity: 1}];
             setCartItems(newCartItems);
         }
+
     }
 
     const removeCartItem = (id: number) => {
         const newCartItem = cartItems.filter(cartItem => cartItem.id !== id);
         setCartItems(newCartItem);
     }
+
+
 
     return (
       <CartContext.Provider
