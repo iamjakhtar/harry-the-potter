@@ -4,7 +4,7 @@ import { collection } from "../../data/collection";
 import BookComponent from "../book/Book";
 
 const BookList = () => {
-    const [books, setBooks] = useState(collection);
+    const [books] = useState(collection);
 
     const bookListMap = books.map(book => (
         <BookComponent key={book.id} book={book}/>
