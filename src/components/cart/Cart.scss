@@ -7,7 +7,7 @@
     padding: 15px;
     background-color: $secondary-color;
     position: absolute;
-    right: 0;
+    right: 20px;
     z-index: 10000;
     box-shadow: 0 0 10px $primary-color;
 
@@ -32,6 +32,11 @@
         display: flex;
         justify-content: space-between;
         padding: 6px 0;
+
+        span:nth-child(1) {
+            width: 243px;
+            text-align: left;
+        }
     }
 
     .cart-footer {
