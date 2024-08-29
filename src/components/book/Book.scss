@@ -16,6 +16,9 @@
         color: $secondary_color;
         outline: 0;
         border: 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 1.2px;
 
         &:hover {
             background: lighten($primary_color, 10%);

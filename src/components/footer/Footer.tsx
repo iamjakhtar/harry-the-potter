@@ -2,7 +2,9 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="footer-container">
+      <p>&copy; Harry The Potter</p>
+    </div>
   )
 }
 export default Footer

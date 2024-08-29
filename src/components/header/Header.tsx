@@ -12,8 +12,6 @@ const Header = () => {
     <header>
       <nav>
         <a href="/">Harry The Potter</a>
-        <a href="/">Home</a>
-        <a href="/checkout">Checkout</a>
         <button onClick={toggleCart}>
          <img src={CartIcon} alt="Cart Icon" />
         </button>

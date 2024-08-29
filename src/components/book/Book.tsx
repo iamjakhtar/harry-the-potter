@@ -17,7 +17,7 @@ const BookComponent = ({ book }: {book: Book}) => {
       <h3>{truncatString(book.title, 25)}</h3>
       <p>Price: {book.price.toFixed(2)}</p>
       <button onClick={() => addToCartHandler({ ...book, quantity: 1 })}>
-        ADD To CART
+        add to cart
       </button>
     </div>
   );
