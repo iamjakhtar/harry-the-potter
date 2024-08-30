@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import "./Header.scss";
 import { CartContext } from "../../context/CartContext";
 import Cart from "../cart/Cart";
 import CartIcon from "./cart-shopping.svg";
+import "./Header.scss";
 
 const Header = () => {
   const { toggleCart, isCartOpen } = useContext(CartContext);
@@ -17,7 +17,7 @@ const Header = () => {
         </button>
       </nav>
     </header>
-    { isCartOpen && <Cart />}
+    { isCartOpen && <Cart/>}
     </>
   )
 }

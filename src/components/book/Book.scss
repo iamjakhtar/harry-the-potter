@@ -10,6 +10,13 @@
         width: 100%;
     }
 
+    p {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        padding: 10px 0;
+    }
+
     button {
         background: $primary_color;
         padding: 10px;

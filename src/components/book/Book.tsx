@@ -15,7 +15,10 @@ const BookComponent = ({ book }: {book: Book}) => {
     <div className="book-container">
       <img src={book.coverImage} alt={book.title} />
       <h3>{truncatString(book.title, 25)}</h3>
-      <p>Price: {book.price.toFixed(2)}</p>
+      <p>
+        <span>Price:</span> 
+        <span>€{book.price.toFixed(2)}</span>
+      </p>
       <button onClick={() => addToCartHandler({ ...book, quantity: 1 })}>
         add to cart
       </button>

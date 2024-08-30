@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import "./Cart.scss";
 import { CartContext } from "../../context/CartContext";
-import CartItem from "../cart-item/CartItem";
 import { calculateCartTotal } from "../../utils/calculateCartTotal";
 import { calculateDiscount } from "../../utils/calculateDiscount";
+import CartItem from "../cart-item/CartItem";
+import "./Cart.scss";
 
 const Cart = () => {
   const { cartItems } = useContext(CartContext);
@@ -18,21 +18,22 @@ const Cart = () => {
         <span>Price</span>
         <span>Qty</span>
       </div>
-      {cartItems.map((cartItem) => (
+      { cartItems.length === 0 ? <p>Cart is empty</p> :
+      cartItems.map((cartItem) => (
         <CartItem key={cartItem.id} cartItem={cartItem} />
       ))}
       <div className="cart-footer">
         <div>
           <span>Gross Total:</span>
-          <span>{cartTotal}</span>
+          <span>€{cartTotal}</span>
         </div>
         <div>
           <span>Discount:</span>
-          <span>{discount}</span>
+          <span>€{discount}</span>
         </div>
         <div>
           <span>Net Total:</span>
-          <span>{netTotal}</span>
+          <span>€{netTotal}</span>
         </div>
       </div>
     </div>
