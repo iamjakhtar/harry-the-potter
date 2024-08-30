@@ -14,7 +14,8 @@ const BookComponent = ({ book }: {book: Book}) => {
   return (
     <div className="book-container">
       <img src={book.coverImage} alt={book.title} />
-      <h3>{truncatString(book.title, 25)}</h3>
+      {/* <h3>{truncatString(book.title, 25)}</h3> */}
+      <h3>{book.title}</h3>
       <p>
         <span>Price:</span> 
         <span>€{book.price.toFixed(2)}</span>
