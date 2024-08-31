@@ -7,8 +7,9 @@
     padding: 15px;
     
     h3 {
-        font-size: 18px;
+        font-size: 0.92rem;
         font-weight: 500;
+        padding: 10px 0;
     }
 
     img {
@@ -32,10 +33,15 @@
         font-size: 14px;
         letter-spacing: 1.2px;
         border-radius: 25px;
+        transition: transform 0.5s ease;
 
         &:hover {
             background: lighten($primary_color, 10%);
             cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(90%);
         }
     }
 }
