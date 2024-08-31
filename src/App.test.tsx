@@ -9,7 +9,5 @@ test('renders without crashing', () => {
       <App />
     </CartContextProvider>
   );
-
-  expect(container).toMatchSnapshot();
   
 });

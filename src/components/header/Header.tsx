@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <nav>
         <a href="/">Harry The Potter</a>
-        <button onClick={toggleCart}>
+        <button onClick={toggleCart} aria-label="cart button">
          <img src={CartIcon} alt="Cart Icon" />
         </button>
       </nav>

@@ -10,6 +10,8 @@ describe("Header", () => {
         const headerText = screen.getByRole("link", {
           name: /harry the potter/i,
         });
+        const cartButton = screen.getByRole("button", { name: /cart button/i});
         expect(headerText).toBeInTheDocument();
+        expect(cartButton).toBeInTheDocument();
     })
 })

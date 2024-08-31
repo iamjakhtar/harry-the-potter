@@ -3,7 +3,7 @@ import "./CartItem.scss";
 
 const CartItem = ({ cartItem }: { cartItem: Item}) => {
   return (
-    <div className="cart-item-container">
+    <div className="cart-item-container" data-testid="cart-item-container">
         <span>{cartItem.title}</span>
         <span>€{cartItem.price}</span>
         <span>{cartItem.quantity}</span>

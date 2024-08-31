@@ -12,7 +12,7 @@ const Cart = () => {
   const netTotal = cartTotal - parseFloat(discount);
 
   return (
-    <div className="cart-container">
+    <div className="cart-container" data-testid="cart-container">
       <div className="cart-header">
         <span>Title</span>
         <span>Price</span>
